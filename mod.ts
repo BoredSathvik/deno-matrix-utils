@@ -14,3 +14,6 @@ const MatrixDot = (A: Matrix, B: Matrix): Matrix => {
 		B[0].map((_, j) => row.reduce((acc, _, n) => acc + A[i][n] * B[n][j], 0))
 	) as Matrix;
 };
+
+export { MatrixDot, MatrixVectorDot };
+export type { Vector, Matrix };
